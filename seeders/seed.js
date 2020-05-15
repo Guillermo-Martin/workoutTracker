@@ -1,3 +1,6 @@
+// import Workout schema for use in here
+import Workout from '../models/workoutSchema';
+
 let mongoose = require("mongoose");
 let db = require("../models");
 
@@ -134,6 +137,10 @@ let workoutSeed = [
     ]
   }
 ];
+
+// seed the workouts database
+const workout = new Workout(workoutSeed);
+workout.save();
 
 db.Workout.deleteMany({})
   .then(() => db.Workout.collection.insertMany(workoutSeed))
