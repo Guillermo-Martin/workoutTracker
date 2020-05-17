@@ -35,7 +35,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutSeed", {
 // ========== All Routes ==========
 // ========== API routes ========== 
 // (use all api routes created in the 'routes' folder in this file)
-app.use(require("./routes/api"));
+// app.use(require("./routes/api"));
+app.use(require('./routes'));
 
 // ========== non-API routes ==========
 // go to index.html when '/' is hit
