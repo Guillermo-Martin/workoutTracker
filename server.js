@@ -25,6 +25,8 @@ app.use(express.static("public"));
 
 
 // ========== Connect Mongoose to MongoDB ==========
+// If deployed, use the deployed database.  Otherwise, use the local mongoHeadlines database.
+// Connect to the Mongo database
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutSeed", {
   useNewUrlParser: true,
   useFindAndModify: false,
