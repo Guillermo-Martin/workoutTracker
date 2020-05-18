@@ -1,51 +1,61 @@
-# Unit 17 Nosql Homework: Workout Tracker
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+# **Fitness Tracker**
 
-## User Story
+# Table of Contents
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+- [Project Description](#project-description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [License](#license)
+- [Contributions](#contributions)
+- [Questions](#questions)
 
-## Business Context
+# Project Description
 
-A consumer will reach their fitness goals quicker when they track their workout progress.
+In this project, a user can create and track their workouts as well as add exercises to an existing workout. The application also provides a user with graphs so that they can track their progress.
 
-## Acceptance Criteria
+# Installation
 
-When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
+The following packages will need to be installed in order for the application to work: Express, Mongoose, and Morgan. A user can install the packages by typing the following command in the terminal:
 
-The user should be able to:
+```sh
+npm i
+```
 
-  * Add exercises to a previous workout plan. POST REQUEST
+Note: Prior to running the command, change directories into where the 'package.json' file is located.
 
-  * Add new exercises to a new workout plan. POST REQUEST
+# Usage
 
-  * View multiple the combined weight of multiple exercises on the `stats` page. GET REQUEST
+The application is located here: [Fitness Tracker](https://peaceful-forest-29536.herokuapp.com/). If no workouts exist, one can click on the "New Workout" button. If a workout does exist, a user can click on either the "Continue Workout" or "New Workout" button. The user will then have the option to select what type of exercise they would like to do. The name of an exercise and any associated data can then be entered. Clicking on the "Dashboard" link displays a user's progress using various graphs.
 
-## Commit Early and Often
+# Tests
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+Tests can be conducted locally using a Mongo database.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+# License
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+Licensed under the [MIT License](https://spdx.org/licenses/MIT.html).
 
-Follow these guidelines for committing:
+# Contributions
 
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+This project is currently not accepting any contributions.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
+# Questions
 
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
+If you have any questions, please contact the project owner by clicking on the email listed below.
 
-* Test your application before you commit to ensure functionality at every step in the development process
+![user image](https://avatars3.githubusercontent.com/u/57199674?v=4)
 
-We would like you to have well over 200 commits by graduation, so commit early and often!
+#### gscalica@gmail.com
 
-## Submission on BCS
 
-You are required to submit the following:
+# Screenshots
 
-* The URL to the deployed application
+![fitness tracker image 1](./assets/fitnessTracker1.png)  
+![fitness tracker image 2](./assets/fitnessTracker2.png)  
+![fitness tracker image 3](./assets/fitnessTracker3.png)  
 
-* The URL to the Github repository
+# Functionality Demonstration 
+![fitness demo gif](./assets/fitnessDemo.gif)
